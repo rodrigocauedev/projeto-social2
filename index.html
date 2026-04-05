@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Social</title>
+    <style>
+        body {
+            background-image: url(imagens/fundo-madeira.jpg);
+            background-repeat: no-repeat;
+            background-position: top center;
+            width: 95vw;
+            height: 95vh;
+        }
+
+        ::-webkit-scrollbar {
+            width: 0px;
+            height: 0px;
+        }
+
+        #telefone {
+            background-image: url(imagens/frame-iphone.png);
+            background-repeat: no-repeat;
+            height: 628px;
+            width: 311px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #tela {
+            position: relative;
+            top: 80px;
+            left: 22px;
+            height: 472px;
+            width: 268px;
+        }
+
+        a {
+            width: 60px;
+            text-align: right;
+            padding: 5px;
+            padding-right: 7px;
+            margin-top: 10px;
+            display: block;
+            text-align: right;
+        }
+
+        img {
+            width: 60px;
+            border-radius: 50%;
+            border: 2px solid black;
+            text-align: right;
+        }
+
+        img:hover {
+            transform: translate(-5%, -5%);
+        }
+    </style>
+</head>
+<body>
+    <div id="telefone">
+        <iframe src="home.html" frameborder="0" name="redes" id="tela"></iframe>
+    </div>
+
+    <div id="redes">
+        <a href="home.html" target="redes"><img src="imagens/logo-home.jpg" alt=""></a>
+        <a href="instagram.html" target="redes"><img src="imagens/logo-instagram.jpg" alt=""></a>
+        <a href="git.html" target="redes"><img src="imagens/logo-github.jpg" alt=""></a>
+    </div>
+</body>
+</html>
